@@ -2,7 +2,7 @@
 
 <p align="center">Build a 3D FPS from a single prompt: 4 standalone code-generation experiments with Fable 5.2 (Anthropic's large model), inspired by Saltline—complete with single-file playable demos, exact prompts, runner scripts, and token billing data.</p>
 
-<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a></p>
+<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a></p>
 
 <p align="center">
   <a href="https://wquguru.github.io/fable52-fps-repro/"><img src="https://img.shields.io/badge/Play_Online-GitHub_Pages-E8552B?style=for-the-badge" alt="Play Online" height="36"></a>

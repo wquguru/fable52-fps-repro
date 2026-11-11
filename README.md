@@ -2,7 +2,7 @@
 
 <p align="center">一句话让 AI 从零写出 3D 射击游戏：受 Saltline 启发，用 Fable 5.2（Anthropic 的大模型）跑通的 4 个纯代码生成实验，公开全部单文件成品、提示词、运行脚本和账单数据。</p>
 
-<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a></p>
+<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.ja.md">日本語</a></p>
 
 <p align="center">
   <a href="https://wquguru.github.io/fable52-fps-repro/"><img src="https://img.shields.io/badge/Play_Online-GitHub_Pages-E8552B?style=for-the-badge" alt="在线试玩" height="36"></a>
