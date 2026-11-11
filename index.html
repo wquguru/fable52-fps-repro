@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fable 5.2 FPS Repro</title>
+<meta name="description" content="用 Claude Code + Fable 5.2 分 4 个实验复现一句话 FPS：音效、材质、建模、完整游戏。全部单文件 HTML，在线可玩。">
+<style>
+:root{--bg:#0b0d10;--card:#14181d;--ink:#e9e6df;--dim:#9aa3ab;--line:#262c33;--acc:#ffb347}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f6f4ef;--card:#fff;--ink:#16191c;--dim:#5b636b;--line:#e2ded6;--acc:#c46a12}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif}
+main{max-width:1080px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.2;margin:0 0 8px;letter-spacing:.01em}
+p.lead{color:var(--dim);margin:0 0 28px;max-width:720px}
+.hero{display:block;width:100%;border-radius:12px;border:1px solid var(--line);margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-2px);border-color:var(--acc)}
+a.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.meta{padding:14px 16px 16px}
+.meta b{display:block;font-size:17px}
+.meta span{color:var(--dim);font-size:14px}
+.tag{color:var(--acc);font:600 12px/1 ui-monospace,monospace;letter-spacing:.08em}
+footer{margin-top:40px;color:var(--dim);font-size:14px}
+footer a{color:var(--acc)}
+</style>
+</head>
+<body>
+<main>
+  <div class="tag">CLAUDE CODE × FABLE 5.2</div>
+  <h1>一句话 FPS，分 4 步复现</h1>
+  <p class="lead">音效、材质、建模、完整游戏，每一步都是 Fable 5.2 无人值守跑出来的单文件 HTML，不加载任何外部模型、图片和音频。点开就能玩（three.js 从 CDN 加载）。</p>
+  <img class="hero" src="docs/demo.gif" alt="SUBLEVEL 07 实机画面：潮湿的地下变电站走廊，持红点卡宾枪射击悬浮无人机">
+  <div class="grid">
+    <a class="card" href="demos/04-fps/"><img src="docs/screens/04-fps-330.jpg" alt=""><div class="meta"><span class="tag">04 · 40.8 MIN · $15.96</span><b>SUBLEVEL 07 · 完整 FPS</b><span>原版那句提示词，三波无人机，点 ENTER 开始</span></div></a>
+    <a class="card" href="demos/01-audio/"><img src="docs/screens/01-audio.jpg" alt=""><div class="meta"><span class="tag">01 · 16.6 MIN · $4.66</span><b>纯 WebAudio 音效台</b><span>14 个合成音效 + 配乐，0 采样</span></div></a>
+    <a class="card" href="demos/02-materials/"><img src="docs/screens/02-mat-container.jpg" alt=""><div class="meta"><span class="tag">02 · 23.9 MIN · $8.56</span><b>程序化材质 · 雨夜码头</b><span>湿混凝土、锈蚀集装箱、镀锌钢</span></div></a>
+    <a class="card" href="demos/03-models/"><img src="docs/screens/03-model-1.jpg" alt=""><div class="meta"><span class="tag">03 · 28.7 MIN · $10.38</span><b>纯代码建模</b><span>岸桥、货船、红点步枪</span></div></a>
+  </div>
+  <footer>成本按 API 价折算（实际走订阅额度）。提示词、跑法和数据见 <a href="https://github.com/wquguru/fable52-fps-repro">GitHub</a> · 作者 <a href="https://x.com/wquguru">@wquguru</a></footer>
+</main>
+</body>
+</html>
